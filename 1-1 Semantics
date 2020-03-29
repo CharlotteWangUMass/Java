@@ -66,6 +66,7 @@ public class HelloWorld {         // Capital letter for the first letter in a cl
 // "main" method.
 // Static: not necessary to create field in the method.
 // Void: NOT return anything.
-// Method / Function: how to identify method by itself? --- Method Signature (name, parameter type; NO return value types, NO exception list).
-// 
+// Method / Function: how to identify method by itself? --- Method Signature (method name and the list of parameter types; NO return value types, NO exception list).
+
+
 

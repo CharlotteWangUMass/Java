@@ -49,4 +49,23 @@
 // Primitive types may be in a stack or in an object.
 // Method 'new' is used in instantiation.
 // Space complexity: extra memory (except input and output) used to implement a program.
+// In java, a field is belong to a mothod / object / etc. There is no local field / global field in Java.
+// Gabage Collector: In Java, it is not certain to know when GC works.
+// Methods are stored in stack. Objects are stored in Heap.
+
+// "Hello World!"
+// HelloWorld.java -> only one 'public class' in each .java profile.
+public class HelloWorld {         // Capital letter for the first letter in a class.
+      public static void main (String[] args) {
+            System.out.println("Hello World!");
+      }
+}
+// In Java, program itself is an object. All the methods/functions are in the same class.
+// In Java, camel coding style. (http://google.github.io/styleguide/javaguide.html)
+// "public static void main (String[] args)" is the main entrance of any Java program.
+// "main" method.
+// Static: not necessary to create field in the method.
+// Void: NOT return anything.
+// Method / Function: how to identify method by itself? --- Method Signature (name, parameter type; NO return value types, NO exception list).
 // 
+

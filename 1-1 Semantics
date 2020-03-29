@@ -1,0 +1,41 @@
+// Java Programming Language.
+// Practice algorithms & data structures.
+// Coding Style.
+// API, libraries.
+// Algorithms ---> Elegant, bug-free Java code.
+// Prerequisite: Install JDK, IDE.
+
+// Semantics VS. Implementations.
+// Semantics: language specifications define semantics. (eg. recipy) -- preresent the meaning of the program.
+// Implementation: defines the actual behavior of a program. (eg. cooking) -- present how to implement a program.
+// For example: 
+   int i = 0;  // set i to be 0; --> read i = 0 (CPU)
+   i++; // Now i = 1; write new value 1 back to i's memory location.
+
+// Basic Concepts in Java.
+// Object-Oriented Programming: everything is an object in Java. :)
+// OOP: each object has a type (int, long, boolean, etc.)
+// OOP: each object is defined by state (field) and behavior (method).
+// Class: define a type of the object. Class -> Type.
+// Object: instance. Each instance has its own states (fields). Object -> Instance.
+// Oject in Java could be an array, list, queue, stack, tree, heap, program, etc.
+// Primitive types: 8 primitive types in Java are NOT object(s).
+// Reference: a namecard (file) with the address of an object (instance). Reference -> Address.
+// Dereferencing: visit the object with the address written on the namecard (reference).
+// Object-Oriented Design (OOD)
+// Encapsulation
+// Inheritance
+// Polymorphism
+// Create an object: Object firstObject = new Object("int");
+// Declare an object: Object firstObject
+// Instantiation (instance): new -> create an object. (eg. build a house & a namecard refer to the house)
+// "firstObject" is a field; it is a reference of data type "Object". // create an object in the memory and return its reference to firstObject.
+// Initialization: call constructor to initialize a new object.
+
+// What does an object look like in Java? --- Object Memory Layout
+// Memeory spaces in a Java program: stack & heap.
+// Stack: FILO (like a trash can).
+// Stack: in cs, a call stack (program stack) is a stack daata structure that stores information about the active subroutlines of a computer program.
+// Stack is used when a method call a method (could be itself, like recursion).
+//        eg. main -> foo -> bar -> test.
+// Heap: In Java, objects reside in an area called the heap. a Heap is created when the JVM starts up and the size of the heap could increase or decrease.

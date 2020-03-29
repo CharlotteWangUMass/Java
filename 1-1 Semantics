@@ -19,6 +19,7 @@
 // Class: define a type of the object. Class -> Type.
 // Object: instance. Each instance has its own states (fields). Object -> Instance.
 // Oject in Java could be an array, list, queue, stack, tree, heap, program, etc.
+// Object is stored in the Heap.
 // Primitive types: 8 primitive types in Java are NOT object(s).
 // Reference: a namecard (file) with the address of an object (instance). Reference -> Address.
 // Dereferencing: visit the object with the address written on the namecard (reference).
@@ -36,6 +37,16 @@
 // Memeory spaces in a Java program: stack & heap.
 // Stack: FILO (like a trash can).
 // Stack: in cs, a call stack (program stack) is a stack daata structure that stores information about the active subroutlines of a computer program.
-// Stack is used when a method call a method (could be itself, like recursion).
+// Stack is used when a method call a method (could be itself, like recursion).Call stack is an area in memory.
 //        eg. main -> foo -> bar -> test.
+// Call Stack is in every Java program. Call stack is an area in memory.
+// Breaking Point: call stack. After current method is executed, return previous breaking point.
+// Stack variable has the lifetime of the function of scope. When current method is implemented, the result is saved in currentcall stack and the result is NOT accessible/visitable/visible for amy method then.
+
 // Heap: In Java, objects reside in an area called the heap. a Heap is created when the JVM starts up and the size of the heap could increase or decrease.
+// Heap: dynamic allocated object. Heap is used to store objects that are created by method 'new'.
+// In Java, all the objects are stored in Heap. But NOT all the references are in stack.
+// Primitive types may be in a stack or in an object.
+// Method 'new' is used in instantiation.
+// Space complexity: extra memory (except input and output) used to implement a program.
+// 

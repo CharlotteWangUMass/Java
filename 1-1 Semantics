@@ -67,6 +67,33 @@ public class HelloWorld {         // Capital letter for the first letter in a cl
 // Static: not necessary to create field in the method.
 // Void: NOT return anything.
 // Method / Function: how to identify method by itself? --- Method Signature (method name and the list of parameter types; NO return value types, NO exception list).
+// Constructor
+// Constant Field
+// Static Field
+// Static Constant Field
 
+// Primitive Types (8) in Java: boolean, byte, char, short, int, long, float, double.
+// Primitive types are NOT objects; NO field; NO method.
+// Constructor: this and null pointer.
+// Constructor: a special method to initialize objects, must have the same name as the class.
+// Constructor: is used to parameterly create objects. 
+// In Java, constructor's name is the same as Class's name.
+// This: The current (self) instance. --- itself. (this.age = age;) The object that calls the function is "this".
+// Example: firstObject.setAge(10) ---> "this" means "firstObject".
+// "This" is mandatory to be written down if argument name is the same as field name.
+public class Object {
+      String table;
+      coid setName (String table) {
+            this.table = table;   // this.table ---> "table" is field's name. The right side is the input parameter.
+      }
+}
 
+// Null: an empty reference. (There is no namecard that points to an object.)
+// NullPointerException
+// Null is NOT an object. It is a value.
+
+// Final: once assigned, cannot be changed.
+// Final class: A class that cannot be derived. (a class could NOT be inherited)
+// Final Method: A method that cannot be overridden.
+// Final Field: A field that once assigned, cannot be assigned again.
 

@@ -22,3 +22,31 @@
 // Step2: Right move all the elements after given inserted idex by 1.
 // Step3: Set the element at given inserted index.
 
+// LinkedList: backend by a doubly Linked List. (N1 <--> N2). 
+// Eager Computation: size() --- O(1) Maintain LinkedList's / ArrayList's length.
+// Lazy Computation
+// Concurrent Hash Map: Eager Computation does NOT work well.
+
+// Method isEmpty()
+      public boolean isEmpty() {
+            if (size == 0) {
+                  return true;
+            } else {
+                  return false;
+            }
+      }
+// Time Complexity Analysis: ArrayList VS. LinkedList
+//                                              ArrayList            LinkedList
+//      - get(int index) at head / tail           O(1)                  O(1) <-- bcs of doubly Linked List backend
+//      - get(int index) in middle                O(1)                  O(n)
+//      - set(int index) at head / tail           O(1)                  O(1)
+//      - set(int index) in middle                O(1)                  O(n)
+//      - add(int index, E e) in middle           O(n) <- right shift   O(n) <- Find middle fist and do insertion
+//      - add(int index, E e) at head             O(n) <- right shift   O(1) <- head is the first element
+//      - add(E e) at tail (not full-szie)        O(1) <- append        O(1) <- backedn doubly Linked List
+//      - add(E e) at tail (is full-szie)         O(n) <- append        O(1) <- backedn doubly Linked List
+//      - remove(int index) at head               O(n) <- left shift    O(1)
+//      - remove(int index) at tail               O(1)                  O(1)
+//      - remove(int index) at middle             O(n) <- left shift    O(n) <- find middle first
+//      - size()                                  O(1)                  O(1)
+//      - isEmpty()                               O(1)                  O(1)

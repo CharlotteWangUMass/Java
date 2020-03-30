@@ -12,7 +12,7 @@
 // Size VS. Length VS. Capacity: size is the value of the # of non-null element in an array.
 // Append an element in an array.
 // Step1: Check if (full-size == length)
-// Step2: If the array is full, creat a new array with 1.5 times length of original array;
+// Step2: If the array is full, expend the array --- creat a new array with 1.5 times length of original array;
 // Step3: Copy all the elements in original array to new array;
 // Step4: Assign the next element's value to be the new element's value.
 // Take away: the length could be expanded several times.

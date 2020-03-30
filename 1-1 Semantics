@@ -97,3 +97,13 @@ public class Object {
 // Final Method: A method that cannot be overridden.
 // Final Field: A field that once assigned, cannot be assigned again.
 // Final: keep reference unchanged.
+
+// Static: In Java, members belong to class, not object (instance).
+// Static: no instance is required to access those static fields. (a class's behavior, instead of an instance's behavior.)
+// Class Variable VS. Instance Variable.
+
+// Access Modifier: public, private, protected and default.
+// Public: everyone can access.
+// Private: only myself can access (at class level.) Other objects of the same class can also access.
+// Protected: only my kids and same package can access.
+// Default: Only the same package can access.

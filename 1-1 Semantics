@@ -102,8 +102,8 @@ public class Object {
 // Static: no instance is required to access those static fields. (a class's behavior, instead of an instance's behavior.)
 // Class Variable VS. Instance Variable.
 
-// Access Modifier: public, private, protected and default.
+// Access Modifier: public, protected default and private.
 // Public: everyone can access.
-// Private: only myself can access (at class level.) Other objects of the same class can also access.
 // Protected: only my kids and same package can access.
 // Default: Only the same package can access.
+// Private: only myself can access (at class level.) Other objects of the same class can also access.

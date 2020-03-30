@@ -1,1 +1,10 @@
-
+// Review: object, reference; call stack, Heap; dereferencing.
+// Parameter: pass by value.
+// Parameter Passing: 1) pass by value; 2) pass by reference.
+// In Java, there is NO passing by reference; only passing by value.
+// Pass By Value: always pass by value in Java.
+// There is NO pointer in Java.
+// Reference points to an object.
+// Always pass by value: 1) for primitive types: copy values. 2) for objects: copy of the object reference.
+// Copy of the object reference: copy the reference, and then there are two references pointing to the same object.
+// 

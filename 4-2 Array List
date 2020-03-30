@@ -1,4 +1,4 @@
-// Class List in Java: is used to represent data in squence. 
+// Interface List in Java: is used to represent data in squence. 
 // List<String> myList = new ArrayList<>();
 // Implement List in Java.
 // Array: access element, add element, delete element, remove element...
@@ -54,3 +54,12 @@
 
 // Amortized Time Complexity VS. Average Time Complexity.
 // Amortized Time Complexity: amortize an expensive opetation to all operations.
+
+// In memory, each element in an ArrayList is continuously stored in the memory.
+// Cache
+// Both call stack and Heap are in memory.
+// Stack and Vector are NOT recommende. Vector <- ArrayList; Stack <- LinkedList.
+// Deque
+// Class ArrayDeque -> LinkedList
+
+

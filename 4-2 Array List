@@ -1,0 +1,24 @@
+// Class List in Java: is used to represent data in squence. 
+// List<String> myList = new ArrayList<>();
+// Implement List in Java.
+// Array: access element, add element, delete element, remove element...
+
+// Array: array.length could NOT be changed once the array is created.
+// Insert an element in a full-size array: creat a new array with 1.5 times length of original array; 
+//        and then copy all the elements in original array to new array;
+//        and assign the next element's value to be the new element's value.
+
+// ArrayList: use array to implement list.
+// Size VS. Length VS. Capacity: size is the value of the # of non-null element in an array.
+// Append an element in an array.
+// Step1: Check if (full-size == length)
+// Step2: If the array is full, creat a new array with 1.5 times length of original array;
+// Step3: Copy all the elements in original array to new array;
+// Step4: Assign the next element's value to be the new element's value.
+// Take away: the length could be expanded several times.
+
+// Insert an element in given index in an array. (eg: call add(2, 5) -> insert element "5" to index 2)
+// Step1: check the array; expand if necessary.
+// Step2: Right move all the elements after given inserted idex by 1.
+// Step3: Set the element at given inserted index.
+

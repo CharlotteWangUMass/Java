@@ -52,3 +52,5 @@
 //      - size()                                  O(1)                  O(1)
 //      - isEmpty()                               O(1)                  O(1)
 
+// Amortized Time Complexity VS. Average Time Complexity.
+// Amortized Time Complexity: amortize an expensive opetation to all operations.

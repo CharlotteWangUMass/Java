@@ -96,4 +96,4 @@ public class Object {
 // Final class: A class that cannot be derived. (a class could NOT be inherited)
 // Final Method: A method that cannot be overridden.
 // Final Field: A field that once assigned, cannot be assigned again.
-
+// Final: keep reference unchanged.

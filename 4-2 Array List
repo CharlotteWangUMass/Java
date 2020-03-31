@@ -24,7 +24,7 @@
 
 // LinkedList: backend by a doubly Linked List. (N1 <--> N2). 
 // Eager Computation: size() --- O(1) Maintain LinkedList's / ArrayList's length.
-// Lazy Computation
+// Lazy Computation： have to.
 // Concurrent Hash Map: Eager Computation does NOT work well.
 
 // Method isEmpty()
@@ -62,4 +62,23 @@
 // Deque
 // Class ArrayDeque -> LinkedList
 
+// Null: a reference points to nothing. Always do Null Check before any other checks.
+// Empty: there is an object, but nothing in the object.
+// In Java, for logistic operation, evaluate from left to right.
+// Keep in mind:
+// - Check null at very first place.
+// - Check length / size / (head == null || head.next == null)
+// - Check index out of Boundary (in case of for-loop / while-loop)/ NullPointerException (NPE)
+// - Ternimation condition for While-loop??
+// - Check Dereference.
+// Clarify steps: 
+// - Initial check
+// - Understand the meaning of each local variable
+// - Condition to maintain a for-loop / while - loop & condition to termiante a loop.
+// - Make concrete examples and all possible situations.
+// - Post-processing after exiting for-loop / while-loop. 
 
+// Code Review
+// (i++) VS. (i + 1) VS. (++i)
+// i++; (temp = i; i = i + 1; return temp)
+// ++i; (i = i + 1; return i)

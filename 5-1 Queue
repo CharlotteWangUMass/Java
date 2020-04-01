@@ -1,0 +1,21 @@
+// Global Variable in Java. If possible, do NOT adopt global variable / class state / field if possible.
+// Implementation: multi-called by different functions leads to errors.
+// When a program's Memory Allocation is too large, consider build a field instead.
+// Semantically, queue / stack is a space to store sth is going to be processed.'
+// Queue: FIFO. Queue is an interface.
+// Stack: FILO.
+// Operations in a Queue: 
+//            offer() --- offer at the tail
+//            poll() --- poll at the head
+//            peek() --- look at the head without polling it out
+// Deque: FIFO & FILO (both queue and stack). Offer and poll at both head and tail.
+//            offer() --- offer at the head / tail
+//            poll() --- poll at the head / tail
+//            peek() --- look at the head / tail without polling it out
+// Common APIs in Queue
+//   Type of Operation           Throw Exception           Return Special Value (Null)
+//        Insert                       add(e)                       offer(e)
+//        Remove                      remove()                      poll()
+//        Examine                     element()                     peek()
+
+ 

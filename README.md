@@ -16,6 +16,7 @@
 - Deque
 
 - Stack
+  - Implement a Stack
 
 - Priority Queue
 

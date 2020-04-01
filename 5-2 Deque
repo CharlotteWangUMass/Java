@@ -2,3 +2,23 @@
 //            offer() --- offer at the head / tail
 //            poll() --- poll at the head / tail
 //            peek() --- look at the head / tail without polling it out
+
+// Common APIs in Deque: Throw Exception and Return Special Value (Null) when operate first element / last element.
+//   Type of Operation                        First Element                             |                  Last Element
+//                              Throw Exception           Return Special Value (Null)   |     Throw Exception           Return Special Value (Null)
+//        Insert                   addFirst(e)                   offerFirst(e)          |       addLast(e)                   offerLast(e)
+//        Remove                  removeFirst()                  pollFirst()            |       pollLast()                   pollLast()
+//        Examine                   getFirst()                   peekFirst()            |       peekLast()                   peekLast()
+
+// Deque: push() and pop(). When deque is used as a stack.
+// In deque, push() and pop() are equivalent to addFirst(e) and removeFirst(). getFirst is equivalent to peek().
+// In practice, push() and pop() are NOT recommended. Stack is NOT equal to deque. In Java, stack is replaced by deque.
+// In Java, queue and deque are recommended instead of stack.
+
+// Other methods used in queue and deque: isEmpty(), size().
+// All the operators' cost is O(1) except priorityQueue.
+
+// LinkedList and ArrayDeque (use an array to implement queue and deque) are recommended.
+// ArrayDeque is NOT the same as ArrayList. There is no null value is ArrayDeque, but null values are permitted to be in a LinkedList.
+// LinkedList -> Queue and Deque. Do NOT use Stack class (Java1 onwards, there is vector subClass).
+// In Java, I choose Deque to implement stack because Java Tutorial requires / recommends.

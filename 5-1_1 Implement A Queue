@@ -1,0 +1,49 @@
+// Generally, queue, deque and stack are implemented by two ways: array and LinkedList. Because queue, deque and stack are NOT premier data structures.
+
+// Implementation by using LinkedList. (? Singly LinkedList? Doubly Linked List?)
+
+class ListNode {
+      int value;
+      ListNode next;
+      ListNode prev;      // used for doubly LinkedList.
+      public ListNode (int value) {
+            this.value = value;
+            this.next = null;
+      }
+}
+
+// Implement a stack by using LinkedList. // Singly LinkedList.
+// Step1: First, do null check.
+
+class Stack {
+      ListNode head; // dummy node
+      public Stack() {
+            head = new ListNode(0);
+            head.next = null;
+      }
+      
+      public int push (int value) {
+            ListNode newNode = new ListNode (value);
+            newNode.next = head.next;
+            head.next = newNode;
+            return value;
+      }
+      
+      public Interger pop () {
+            ListNode temp = head.next;
+            if (head.next == null) {
+                  return null;
+            }
+            head.next = temp.next;
+            temp.next = null;
+            return temp.value;
+      }
+      
+      public Integer peek() {
+            if (head.next == null) {
+                  return null;
+            }
+            return head.next.value;
+      }
+}
+      

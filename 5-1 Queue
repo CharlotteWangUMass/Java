@@ -4,18 +4,35 @@
 // Semantically, queue / stack is a space to store sth is going to be processed.'
 // Queue: FIFO. Queue is an interface.
 // Stack: FILO.
+
 // Operations in a Queue: 
 //            offer() --- offer at the tail
 //            poll() --- poll at the head
 //            peek() --- look at the head without polling it out
+
 // Deque: FIFO & FILO (both queue and stack). Offer and poll at both head and tail.
 //            offer() --- offer at the head / tail
 //            poll() --- poll at the head / tail
 //            peek() --- look at the head / tail without polling it out
-// Common APIs in Queue
+
+// Common APIs in Queue: Throw Exception and Return Special Value (Null).
 //   Type of Operation           Throw Exception           Return Special Value (Null)
 //        Insert                       add(e)                       offer(e)
 //        Remove                      remove()                      poll()
 //        Examine                     element()                     peek()
 
- 
+// Common APIs in Deque: Throw Exception and Return Special Value (Null) when operate first element / last element.
+//   Type of Operation                        First Element                             |                  Last Element
+//                              Throw Exception           Return Special Value (Null)   |     Throw Exception           Return Special Value (Null)
+//        Insert                   addFirst(e)                   offerFirst(e)          |       addLast(e)                   offerLast(e)
+//        Remove                  removeFirst()                  pollFirst()            |       pollLast()                   pollLast()
+//        Examine                   getFirst()                   peekFirst()            |       peekLast()                   peekLast()
+
+// Deque: push() and pop(). When deque is used as a stack.
+// In deque, push() and pop() are equivalent to addFirst(e) and removeFirst(). getFirst is equivalent to peek().
+// In practice, push() and pop() are NOT recommended. Stack is NOT equal to deque. In Java, stack is replaced by deque.
+// In Java, queue and deque are recommended instead of stack.
+
+
+
+

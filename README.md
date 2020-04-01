@@ -11,7 +11,7 @@
   - Array List
   
 - Queue
-  - Implement a Queue.
+  - Implement a Queue
   
 - Deque
 

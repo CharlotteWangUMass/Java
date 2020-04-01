@@ -33,6 +33,62 @@
 // In practice, push() and pop() are NOT recommended. Stack is NOT equal to deque. In Java, stack is replaced by deque.
 // In Java, queue and deque are recommended instead of stack.
 
+// Other methods used in queue and deque: isEmpty(), size().
+// All the operators' cost is O(1) except priorityQueue.
 
+// LinkedList and ArrayDeque (use an array to implement queue and deque) are recommended.
+// ArrayDeque is NOT the same as ArrayList. There is no null value is ArrayDeque, but null values are permitted to be in a LinkedList.
+// LinkedList -> Queue and Deque. Do NOT use Stack class (Java1 onwards, there is vector subClass).
+// In Java, I choose Deque to implement stack because Java Tutorial requires / recommends.
+
+// Example 1:
+
+Queue<Integer> queue = new LinkedList<>();
+queue.offer(1);                           // offer element "1" in the end of given queue
+queue.offer(2);                           // offer element "2" in the end of given queue
+queue.offer(3);                           // offer element "3" in the end of given queue
+while (!queue.isEmpty()) {
+      System.out.println(queue.peek());   // output is: 1, 2, 3. Seperately in three steps.
+      System.out.println(queue.poll());   // output is: 1, 2, 3. Seperately in three steps.
+}
+System.out.println(queue.peek());         // output is null. No NPE. Return to special value (null).
+
+System.out.println(queue.poll());         // output is null. No NPE. Return to specia value (null).
+
+// Example 2
+
+Deque<Integer> stack = new LinkedList<>();
+stack.offerFirst(1);
+stack.offerFirst(2);
+stack.offerFirst(3);
+while (!stack.isEmpty()) {
+      System.out.println(stack.peekFirst());
+      System.out.println(stack.pollFirst());
+}
+System.out.println(stack.peekFirst());      // null.
+System.out.println(stack.pollFirst());      // null.
+
+// Example 3
+
+Deque<Integer> deque = new LinkedList<>();
+deque.offerFirst(1);
+deque.offerFirst(2);
+deque.offerFirst(3);
+deque.offerLast(4);
+deque.offerLast(5);
+deque.offerLast(6);
+int size = deque.size();
+for (int i = 0; i < size; i++) {
+      if (i % 2 == 0) {
+            System.out.println(deque.peekFirst());
+            System.out.println(deque.pollFirst());
+      } else {
+            System.out.println(deque.peekLast()); 
+            System.out.println(stack.pollLast());  
+      }
+System.out.println(deque.peekFirst());
+System.out.println(deque.pollFirst());
+System.out.println(deque.peekLast()); 
+System.out.println(stack.pollLast()); 
 
 

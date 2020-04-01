@@ -1,1 +1,4 @@
-
+// Deque: FIFO & FILO (both queue and stack). Offer and poll at both head and tail.
+//            offer() --- offer at the head / tail
+//            poll() --- poll at the head / tail
+//            peek() --- look at the head / tail without polling it out

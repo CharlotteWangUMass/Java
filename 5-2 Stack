@@ -1,0 +1,12 @@
+// Implement stack by using a deque in Java.
+
+Deque<Integer> stack = new LinkedList<>();
+stack.offerFirst(1);
+stack.offerFirst(2);
+stack.offerFirst(3);
+while (!stack.isEmpty()) {
+      System.out.println(stack.peekFirst());
+      System.out.println(stack.pollFirst());
+}
+System.out.println(stack.peekFirst());      // null.
+System.out.println(stack.pollFirst());      // null.

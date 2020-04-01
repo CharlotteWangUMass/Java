@@ -43,7 +43,7 @@
 
 // Example 1:
 
-Queue<Integer> queue = new LinkedList<>(); // "Queue" is interface; "queue" is reference; initialize the object wo be a LinkedList.
+Queue<Integer> queue = new LinkedList<>(); // "Queue" is interface; "queue" is a field / reference; initialize the object wo be a LinkedList.
 queue.offer(1);                           // offer element "1" in the end of given queue
 queue.offer(2);                           // offer element "2" in the end of given queue
 queue.offer(3);                           // offer element "3" in the end of given queue
@@ -57,7 +57,7 @@ System.out.println(queue.poll());         // output is null. No NPE. Return to s
 
 // Example 2
 
-Deque<Integer> stack = new LinkedList<>(); // "Deque" is an interface; "stack" is a reference; initialize the object to be a LinkedList.
+Deque<Integer> stack = new LinkedList<>(); // "Deque" is an interface; "stack" is a field / reference; initialize the object to be a LinkedList.
 stack.offerFirst(1);
 stack.offerFirst(2);
 stack.offerFirst(3);
@@ -70,7 +70,7 @@ System.out.println(stack.pollFirst());      // null.
 
 // Example 3
 
-Deque<Integer> deque = new LinkedList<>();  // "Deque" is an interface; "deque" is a reference; "LinkedList<>()" initialize the object to be a LinkedList.
+Deque<Integer> deque = new LinkedList<>();  // "Deque" is an interface; "deque" is a field / reference; "LinkedList<>()" initialize the object to be a LinkedList.
 deque.offerFirst(1);
 deque.offerFirst(2);
 deque.offerFirst(3);

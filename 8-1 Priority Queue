@@ -1,0 +1,43 @@
+// PriorityQueue (Heap)
+// PriorityQueue ---> Array (flatten a heap to an array)
+// PriorityQueue is a heap with the same Queue interface with offer(), peek() and poll().
+// PriorityQueue: NOT FIFO. When poll() or peek(), always look at the smallest / greatest element.
+//       Because PriorityQueue is a minHeap / maxHeap.
+// PriorityQueue: like waiting queues at airport --- multiple classes.
+// The PriorityQueue will arrance the elements based on the order of the elements (which one is smaller / greater by comparing any two elements)
+//      and it is optimized for problems about "which one is the smallest / greatest element".
+
+// Commons APIs in PriorityQueue
+//      - offer(E e): O(logn) <- Insert one element into the Heap.
+//      - peek(): O(1) <- peek the top element in the Heap.
+//      - poll(): O(logn) <- Remove the top element from the heap and return to smallest / greatest element
+//      - remove(): O(logn) <- from AbstractQueue (remove element at the head); remove(object):O(n) <- GC (delete given element)
+//      - size(): O(1)
+//      - isEmpty():O(1)
+
+// PriorityQueue: how to define priority? How to compare any two elements?
+// Solution1: Comparable Interface 
+//      - Java Comparable Interface: compareTo()
+//      - PriorityQueue<Integer> minHeap = new PriorityQueue<Integer>();
+//        Interface Comparable<E> {
+//              int compareTo(E ele);
+//        }
+//        
+//        class Integer implements Comparable<Integer> {
+//              private int value;
+//              public Integer (int value) {
+//              @override
+//              public int compareTo(Integer another) {
+//                    if (this value == another value) {
+//                          return 0;
+//                    }
+//              return this.value<another.value> ? -1 : 1;
+//              }
+//        }
+//
+//    We use comparableTo(another) to define the order that in a PriorityQueue. (The smaller the number, the higher the priority)
+//       * 0 -> this and another value are of same priority
+//       * -1 (< 0) -> this has higher priority than another
+//       * 1 (>0) -> this has less priority than another
+// 
+// 

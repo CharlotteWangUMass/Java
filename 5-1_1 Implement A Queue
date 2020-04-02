@@ -34,4 +34,67 @@ public class Queue {
             }
        }
  }
-                  
+               
+// Implement A Queue by Using An Array
+// Queue: head, tail; offer(), poll(), peek()
+// offer() -> put one element at tail; tail++; tail points to enxt available position tail.next
+// poll() -> grab element at head; head++; head points to the next element in queue.
+// Circular Array: connect the start and the end of the array. Index of array.length -> index of 0.
+// head = head + 1 == array.length ? 0 : head + 1; // (head + 1) % array.length
+// In industry, 
+// Solution 1 (recommended): record size, size = 0 (empty); size == array.length (full)
+// Solution 2 : head + 1 = tail (empty); head == tail (full); capacity = array.length - 1 (next of head points to the head of the queue)
+
+public class BoundedQueue {
+      int head;
+      int tail;
+      int size;
+      Interger[] array;
+      public BoundedQueue (int cap) {
+            array = new Integer[cap];
+            head = tail = 0;
+            size = 0;
+      }
+      
+      public boolean offer(Integer ele) {
+            if (size == array.length) {
+                  return false;
+            }
+            
+            array[tail] = ele;
+            tail = tail + 1 == array.length ? 0 : tail + 1;
+            size++;
+            return true;
+      }
+      
+      public Integer peek() {
+            if (size == 0) {
+                  return null;
+            }
+            return array[head];
+      }
+      
+      public Integer poll() {
+            if (size == 0) {
+                  return null;
+            }
+            Integer result = array[head];
+            head = head + 1 == array.length ? 0 : head + 1;    // (head + 1) % array.length;
+            size--;
+            return result;
+      }
+      
+      public int size() {
+            return size;
+      }
+      
+      public boolean isEmpty() {
+            return size == 0;
+      }
+      
+      public boolean isFull() {
+            return size == array.length;
+      }
+}
+
+

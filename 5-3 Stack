@@ -10,3 +10,31 @@ while (!stack.isEmpty()) {
 }
 System.out.println(stack.peekFirst());      // null.
 System.out.println(stack.pollFirst());      // null.
+
+
+// Implement A Stack by Using An Array.
+public class BoundedStack {
+      int[] array;
+      int head;
+      
+      public boolean push (int ele) {
+            if (head == array.length - 1);
+            return false;
+      }
+      
+      array[++head] = ele;
+      return true;
+      }
+      
+      public Integer pop() {
+            return head == -1 ? null : array[head--];
+      }
+      
+      public Integer top() {
+            retrun head == -1 ? null : array[head];
+      }
+}
+
+// LinkedList <- The Linked List Implementation
+// ArrayDeque (+ Space Expand) <- The Array Implementation
+      

@@ -40,4 +40,50 @@
 //       * -1 (< 0) -> this has higher priority than another
 //       * 1 (>0) -> this has less priority than another
 // 
-// 
+// Example: Compare two cells with their value in the matrix. Suupose there is a Matrix, each row is sorted by ascending order
+//          and each column is sorted by ascending order. Write a class to represent each cell in the matrix and compare two cells in it.
+// Solution:
+
+class Cell {
+      public int row;
+      public int col;
+      public int value;
+      public Cell (int row, int col, int value) {
+            this.row = row;
+            this.cell = cell;
+            this.value = value;
+      }
+      
+      PriorityQueue<Cell> minHeap = new PriorityQueue<Cell>;
+      Cell c1 = new Cell (0, 0, 0);
+      Cell c2 = new Cell (0, 1, 2);
+      minHeap.offer(c1);
+      minHeap.offer(c2);
+}      
+      
+class Cell {
+      public int row;
+      public int col;
+      public int value;
+      public Cell (int row, int col, int value) {
+            this.row = row;
+            this'cell = cell;
+            this.value = value;
+      }
+      
+      @Override
+      public int compareTo (Cell another) {
+            if (this.value == another.value) {
+                  return 0;
+            }
+            return this.value <another.value> ? -1 : 1;
+       }
+ }
+ 
+ 
+// To compare two cell objects, use the compareTo() method.
+//      Cell c1 = new Cell(0,0,0);
+//      Cell c2 = new Cell(0,1,2);
+//      int result = c1.compareTo(c2);
+//      return -1;  // c1 priority higher than c2, because c1's value is less than c2's value in this minHeap.
+
